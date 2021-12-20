@@ -1,0 +1,13 @@
+principals:
+  - name: ivan.trusov@databricks.com # name could be username, group name or service name
+    database: default
+    table: foo
+    privileges: # please follow https://registry.terraform.io/providers/databrickslabs/databricks/latest/docs/resources/sql_permissions for all possible settings
+      - SELECT
+      - MODIFY
+  - name: some-group 
+    database: default
+    table: foo
+    privileges: 
+      - SELECT
+      - MODIFY
