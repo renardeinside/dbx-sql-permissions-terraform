@@ -11,3 +11,9 @@ principals:
     privileges: 
       - SELECT
       - MODIFY
+  - name: some-other-group 
+    database: default
+    table: foo
+    privileges: 
+      - SELECT
+      - MODIFY
